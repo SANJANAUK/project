@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign Up</title>
+  <style>
+ 
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #665fa1;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: #a8a4c7;
+      color: #040323;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #040323;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #a8a4c7;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #040323;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #040323;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 8px;
+      color: #040323;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #ffb900;
+    }
+
+  
+    .toggle {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .toggle a {
+      color: #040323;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toggle a:hover {
+      text-decoration: underline;
+    }
+
+  
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #a8a4c7;
+      color: #fff;
+      margin-top: 30px;
+    }
+
+    #signup-form-container {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CAR RENTAL PRO</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="carlistings.html">Car Listings</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="login_signup.html" class="active">Login / Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login/Signup-->
+  <div class="form-container">
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Enter your email" required>
+      <input type="password" id="login-password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="toggle">
+      <p>Don't have an account? <a href="#signup-form-container">Sign up here</a></p>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup-form-container">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <input type="text" id="signup-name" placeholder="Enter your name" required>
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+        <input type="password" id="signup-password" placeholder="Enter your password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div class="toggle">
+        <p>Already have an account? <a href="#login-form">Login here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 CAR RENTAL PRO. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
